@@ -1,0 +1,16 @@
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router/index'
+import store from './store/index'
+import '@/plugins/ui-theme/index'
+import '@/plugins/element-ui/index'
+import '@scss/index.scss'
+import '@/icons'
+
+Vue.config.productionTip = false
+
+new Vue({
+    router,
+    store,
+    render: h => h(App)
+}).$mount('#app')
