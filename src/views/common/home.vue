@@ -16,7 +16,7 @@
         <ul>
             <li>QQ：1127513120</li>
             <li>邮箱：15555030339@163.com</li>
-            <li>GitHub：<a href="https://github.com/Tomxuetao">https://github.com/Tomxuetao</a></li>
+            <li>GitHub：<a href="https://github.com/Tomxuetao" target="_blank">https://github.com/Tomxuetao</a></li>
         </ul>
     </div>
 </template>
