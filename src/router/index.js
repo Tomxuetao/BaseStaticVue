@@ -9,6 +9,16 @@ import Router from 'vue-router'
 import dynamicMenuRoutes from './routers'
 import { isURL } from '@/utils/validate'
 
+/*
+ * 解决Vue-router 报NavigationDuplicated 的错误
+ * 报错原因在于Vue-router在3.1之后把$router.push()方法改为了Promise。所以假如没有回调函数，错误信息就会交给全局的路由错误处理，因此就会报上述的错误。
+ */
+const original = Router.prototype.push
+Router.prototype.push = function push (location, onResolve, onReject) {
+    if (onResolve || onReject) return original.call(this, location, onResolve, onReject)
+    return original.call(this, location).catch(err => err)
+}
+
 Vue.use(Router)
 // 开发环境不使用懒加载, 因为懒加载页面太多的话会造成webpack热更新太慢, 所以只有生产环境使用懒加载
 const _import = require('./import-' + process.env.NODE_ENV)
