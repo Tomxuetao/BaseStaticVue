@@ -1,5 +1,5 @@
 <template>
-    <main class="site-content" :class="{ 'site-content--tabs': $route.meta.isTab }">
+    <main class="site-content">
         <el-card :body-style="siteContentViewHeight">
             <keep-alive>
                 <router-view></router-view>

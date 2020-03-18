@@ -34,10 +34,6 @@ module.exports = {
             .end()
             .use('file-loader')
             .loader('file-loader')
-        // 打包分析工具
-        config
-            .plugin('webpack-bundle-analyzer')
-            .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
         // html插件
         config
             .plugin('html')

@@ -18,6 +18,10 @@
             <li>邮箱：15555030339@163.com</li>
             <li>GitHub：<a href="https://github.com/Tomxuetao" target="_blank">https://github.com/Tomxuetao</a></li>
         </ul>
+
+        <el-button icon="el-icon-arrow-left">返回</el-button>
+
+        <el-button type="primary">复制产品ID</el-button>
     </div>
 </template>
 
