@@ -47,9 +47,9 @@ export default {
     methods: {
         // 通过menuId与动态(菜单)路由进行匹配跳转至指定路由
         gotoRouteHandle (menu) {
-            let route = this.dynamicMenuRoutes.filter(item => item.meta.menuId === menu.menuId)
-            if (route.length >= 1) {
-                this.$router.push({ name: route[0].name })
+            let route = this.dynamicMenuRoutes.find(item => item.meta.menuId === menu.menuId)
+            if (route) {
+                this.$router.push({ name: route.name })
             }
         }
     }
