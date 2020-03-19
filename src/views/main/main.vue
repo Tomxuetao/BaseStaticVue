@@ -1,7 +1,5 @@
 <template>
-    <div
-        class="site-wrapper"
-        :class="{ 'site-sidebar--fold': sidebarFold }">
+    <div class="site-wrapper" :class="{ 'site-sidebar--fold': sidebarFold }">
         <template>
             <main-navbar></main-navbar>
             <main-sidebar></main-sidebar>
