@@ -3,7 +3,7 @@ export default {
     state: {
         // 页面文档可视高度(随窗口改变大小)
         documentClientHeight: 0,
-        // 导航条, 布局风格, default(默认) / inverse(反向)
+        // 导航条, 布局风格, defalut(默认) / inverse(反向)
         navbarLayoutType: 'default',
         // 侧边栏, 布局皮肤, light(浅色) / dark(黑色)
         sidebarLayoutSkin: 'dark',
@@ -11,11 +11,13 @@ export default {
         sidebarFold: false,
         // 侧边栏, 菜单
         menuList: [],
+        // 激活菜单名称
         menuActiveName: '',
         // 内容, 是否需要刷新
         contentIsNeedRefresh: false,
         // 主入口标签页
         mainTabs: [],
+        // 激活tab名称
         mainTabsActiveName: ''
     },
     mutations: {
