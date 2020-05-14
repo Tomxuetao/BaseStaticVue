@@ -69,8 +69,8 @@ export default {
         // 路由操作
         routeHandle (route) {
             if (route.meta.isTab) {
-                // tab选中, 不存在先添加
                 let tab = this.mainTabs.filter(item => item.name === route.name)[0]
+                // tab选中, 不存在先添加
                 if (!tab) {
                     if (route.meta.isDynamic) {
                         route = this.dynamicMenuRoutes.filter(item => item.name === route.name)[0]

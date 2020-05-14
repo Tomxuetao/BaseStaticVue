@@ -51,14 +51,6 @@ export default {
             set (val) {
                 this.$store.commit('common/updateSidebarFold', val)
             }
-        },
-        mainTabs: {
-            get () {
-                return this.$store.state.common.mainTabs
-            },
-            set (val) {
-                this.$store.commit('common/updateMainTabs', val)
-            }
         }
     },
     methods: {
